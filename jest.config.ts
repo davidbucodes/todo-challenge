@@ -11,6 +11,9 @@ const config: Config = {
   transform: {
     "^.+\\.(ts|js)x?$": "ts-jest",
   },
+  moduleFileExtensions: ["js", "jsx", "tsx", "ts"],
+  rootDir: "./src",
+  setupFilesAfterEnv: ["<rootDir>/../test/setupTests.ts"],
 };
 
 export default config;
