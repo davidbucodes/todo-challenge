@@ -5,11 +5,37 @@ exports[`TodoByIdPage Default should render correctly 1`] = `
   <div
     class="sc-bgqQcB"
   >
-    TodoByIdPage
     <div
-      class="sc-bgqQcB"
+      class="sc-gTRrQi dlvFVq"
     >
-      12345
+      <div
+        class="sc-dicizt gsIoIL"
+      >
+        <span
+          class="sc-iVCKna dRTxeT"
+        >
+          item number:
+        </span>
+        <span
+          class="sc-gxYJeL eWXHxr"
+        >
+          12345
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-gTRrQi dlvFVq"
+    />
+    <div
+      class="sc-gTRrQi dlvFVq"
+    >
+      <div
+        class="sc-ewnqHT"
+      >
+        Loading 
+        title
+        ...
+      </div>
     </div>
   </div>
 </div>
