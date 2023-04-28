@@ -17,5 +17,12 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
+  async viteFinal(config) {
+    config.server ||= {};
+    config.server.watch = {
+      ignored: ["**/coverage/**", "coverage", "coverage/**"],
+    };
+    return config;
+  },
 };
 export default config;

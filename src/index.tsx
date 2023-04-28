@@ -1,20 +1,23 @@
 /// <reference types="vite/client" />
 import React from "react";
-import ReactDOM from "react-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import App from "./app.js";
+import { router } from "./pages/router";
 import { theme } from "./styles/theme.js";
 
-ReactDOM.render(
+import { createRoot } from "react-dom/client";
+const container = document.getElementById("root") as HTMLElement;
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
     <HelmetProvider>
       <ThemeProvider theme={theme}>
-        <App />
+        <RouterProvider router={router} />
       </ThemeProvider>
     </HelmetProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
 if (import.meta.hot) {

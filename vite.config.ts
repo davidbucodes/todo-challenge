@@ -9,10 +9,10 @@ export default defineConfig({
   server: {
     strictPort: true,
     hmr: {
-      port: 443,
+      host: "localhost",
     },
     watch: {
-      ignored: ["./coverage/**"],
+      ignored: ["**/coverage/**", "coverage", "coverage/**"],
     },
   },
 });

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage Default should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <h2
+      class="sc-gTRrQi"
+    >
+      An error had occurred!
+    </h2>
+    <div
+      class="sc-ewnqHT"
+    >
+      Error details: 
+      Error message
+    </div>
+  </div>
+</div>
+`;

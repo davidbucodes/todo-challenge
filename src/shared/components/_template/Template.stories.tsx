@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Template from ".";
 
 const meta = {
-  title: "Template",
+  title: "Template/Template",
   component: Template,
   tags: ["autodocs"],
   argTypes: {},
