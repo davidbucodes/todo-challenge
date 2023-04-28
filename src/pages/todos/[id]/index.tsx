@@ -19,18 +19,18 @@ function AsyncTodoDetail<T>({
 }) {
   return (
     <Styles.TodoDetail>
-      {isLoading && (
-        <Styles.TodoDetailLoading>Loading {detail}...</Styles.TodoDetailLoading>
-      )}
-      {data && (
-        <Styles.TodoDetailKeyValue>
-          <Styles.Key>{detail}:</Styles.Key>
-          <Styles.Value>{String(data[dataKey])}</Styles.Value>
-        </Styles.TodoDetailKeyValue>
-      )}
-      {isError && (
-        <Styles.TodoDetailError>Error loading {detail}</Styles.TodoDetailError>
-      )}
+      <Styles.TodoDetailKeyValue>
+        <Styles.Key>{detail}:</Styles.Key>
+        <Styles.Value>
+          {data
+            ? String(data[dataKey])
+            : isLoading
+            ? "Loading..."
+            : isError
+            ? "Error loading"
+            : ""}
+        </Styles.Value>
+      </Styles.TodoDetailKeyValue>
     </Styles.TodoDetail>
   );
 }

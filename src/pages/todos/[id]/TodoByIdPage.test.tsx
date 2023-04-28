@@ -26,5 +26,11 @@ describe("TodoByIdPage", () => {
       const wrapperElement = await screen.findByText(getUserByIdExample.name);
       expect(wrapperElement).toBeInTheDocument();
     });
+
+    it("should render error loading creator", async () => {
+      render(<Default />);
+      const wrapperElement = await screen.findByText(getUserByIdExample.name);
+      expect(wrapperElement).toBeInTheDocument();
+    });
   });
 });

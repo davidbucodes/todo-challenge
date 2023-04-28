@@ -25,16 +25,38 @@ exports[`TodoByIdPage Default should render correctly 1`] = `
     </div>
     <div
       class="sc-gTRrQi dlvFVq"
-    />
+    >
+      <div
+        class="sc-dicizt gsIoIL"
+      >
+        <span
+          class="sc-iVCKna dRTxeT"
+        >
+          creator
+          :
+        </span>
+        <span
+          class="sc-gxYJeL eWXHxr"
+        />
+      </div>
+    </div>
     <div
       class="sc-gTRrQi dlvFVq"
     >
       <div
-        class="sc-ewnqHT"
+        class="sc-dicizt gsIoIL"
       >
-        Loading 
-        title
-        ...
+        <span
+          class="sc-iVCKna dRTxeT"
+        >
+          title
+          :
+        </span>
+        <span
+          class="sc-gxYJeL eWXHxr"
+        >
+          Loading...
+        </span>
       </div>
     </div>
   </div>
