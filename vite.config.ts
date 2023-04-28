@@ -11,5 +11,8 @@ export default defineConfig({
     hmr: {
       port: 443,
     },
+    watch: {
+      ignored: ["coverage"],
+    },
   },
 });

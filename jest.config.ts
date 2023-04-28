@@ -14,6 +14,7 @@ const config: Config = {
   moduleFileExtensions: ["js", "jsx", "tsx", "ts"],
   rootDir: ".",
   setupFilesAfterEnv: ["<rootDir>/test/setupTests.ts"],
+  maxWorkers: 1,
 };
 
 export default config;
