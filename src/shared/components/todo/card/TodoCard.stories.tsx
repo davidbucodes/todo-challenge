@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import TodoCard from ".";
-import { getTodoByIdExample } from "../../../../store/apis/todos/examples";
+import { getTodoByIdExample } from "../../../../../test/mocks/apis/todos/examples";
 
 const meta = {
   title: "Todo/TodoCard",

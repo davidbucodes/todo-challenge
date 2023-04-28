@@ -1,4 +1,4 @@
-import { User } from "./types";
+import { User } from "../../../../src/store/apis/users/types";
 
 export const getUserByIdExample: User = {
   id: 1,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Grid from ".";
-import { getAllTodosExample } from "../../../../store/apis/todos/examples";
+import { getAllTodosExample } from "../../../../../test/mocks/apis/todos/examples";
 import { Todo } from "../../../../store/apis/todos/types";
 import TodoCard from "../../todo/card";
 

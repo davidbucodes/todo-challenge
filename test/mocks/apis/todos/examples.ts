@@ -1,4 +1,4 @@
-import { Todo } from "./types";
+import { Todo } from "../../../../src/store/apis/todos/types";
 
 export const getTodoByIdExample: Todo = {
   userId: 1,

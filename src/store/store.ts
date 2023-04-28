@@ -7,6 +7,10 @@ export const store = configureStore({
     [todosApi.reducerPath]: todosApi.reducer,
     [usersApi.reducerPath]: usersApi.reducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware()
+      .concat(todosApi.middleware)
+      .concat(usersApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
