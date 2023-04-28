@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput Default should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <input
+      class="sc-gTRrQi"
+      id="id"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`TextInput WithInitialValue should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <input
+      class="sc-gTRrQi"
+      id="id"
+      type="text"
+      value="initialValue"
+    />
+  </div>
+</div>
+`;
+
+exports[`TextInput WithLabel should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <label
+      class="sc-ewnqHT"
+      for="id"
+    >
+      Label
+    </label>
+    <input
+      class="sc-gTRrQi"
+      id="id"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`TextInput WithPlaceholder should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <input
+      class="sc-gTRrQi"
+      id="id"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;

@@ -18,9 +18,11 @@ export default function TodoCard({ todo: { id, title, completed } }: Props) {
   }, [title]);
 
   return (
-    <Styles.Wrapper isCompleted={completed}>
-      <Styles.Id>#{id}</Styles.Id>
-      <Styles.Title>{formattedTitle}</Styles.Title>
+    <Styles.Wrapper>
+      <Styles.Card isCompleted={completed}>
+        <Styles.Id>#{id}</Styles.Id>
+        <Styles.Title>{formattedTitle}</Styles.Title>
+      </Styles.Card>
     </Styles.Wrapper>
   );
 }

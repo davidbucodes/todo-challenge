@@ -9,9 +9,10 @@ const { Default, Completed, LongTitle, NotCompleted, ShortTitle } =
 describe("TodoCard", () => {
   describe("Default", () => {
     it("should render correctly", () => {
-      render(<Default />);
+      const { container } = render(<Default />);
       const idElement = screen.getByText(`#${Default.args.todo!.id!}`);
       const titleElement = screen.getByText(Default.args.todo!.title!);
+      expect(container).toMatchSnapshot();
       expect(idElement).toBeInTheDocument();
       expect(titleElement).toBeInTheDocument();
     });
@@ -19,9 +20,10 @@ describe("TodoCard", () => {
 
   describe("ShortTitle", () => {
     it("should render correctly", () => {
-      render(<ShortTitle />);
+      const { container } = render(<ShortTitle />);
       const idElement = screen.getByText(`#${ShortTitle.args.todo!.id!}`);
       const titleElement = screen.getByText(ShortTitle.args.todo!.title!);
+      expect(container).toMatchSnapshot();
       expect(idElement).toBeInTheDocument();
       expect(titleElement).toBeInTheDocument();
     });
@@ -29,13 +31,14 @@ describe("TodoCard", () => {
 
   describe("LongTitle", () => {
     it("should render correctly", () => {
-      render(<LongTitle />);
+      const { container } = render(<LongTitle />);
       const idElement = screen.getByText(`#${LongTitle.args.todo!.id!}`);
       const formattedTitle = `${LongTitle.args.todo!.title!.substring(
         0,
         20
       )}...`;
       const titleElement = screen.getByText(formattedTitle);
+      expect(container).toMatchSnapshot();
       expect(idElement).toBeInTheDocument();
       expect(titleElement).toBeInTheDocument();
     });
@@ -44,7 +47,9 @@ describe("TodoCard", () => {
   describe("NotCompleted", () => {
     it("should render correctly", () => {
       const { container } = render(<NotCompleted />);
-      expect(container.firstChild).toHaveStyle({
+      const card = container.firstChild?.firstChild;
+      expect(container).toMatchSnapshot();
+      expect(card).toHaveStyle({
         "background-color": theme.colors.background.crimson,
       });
     });
@@ -53,7 +58,9 @@ describe("TodoCard", () => {
   describe("Completed", () => {
     it("should render correctly", () => {
       const { container } = render(<Completed />);
-      expect(container.firstChild).toHaveStyle({
+      const card = container.firstChild?.firstChild;
+      expect(container).toMatchSnapshot();
+      expect(card).toHaveStyle({
         "background-color": theme.colors.background.green,
       });
     });

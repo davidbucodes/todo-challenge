@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export namespace Styles {
-  export const Wrapper = styled.div<{ isCompleted: boolean }>`
+  export const Wrapper = styled.div``;
+  export const Card = styled.div<{ isCompleted: boolean }>`
     width: 250px;
     text-align: center;
     border: 1px solid black;

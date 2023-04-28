@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoCard Completed should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi izpPZC"
+    >
+      <div
+        class="sc-ewnqHT bDrKue"
+      >
+        #
+        1
+      </div>
+      <div
+        class="sc-fFGjHI bmMTuD"
+      >
+        delectus aut autem
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoCard Default should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi hjhHBO"
+    >
+      <div
+        class="sc-ewnqHT bDrKue"
+      >
+        #
+        1
+      </div>
+      <div
+        class="sc-fFGjHI bmMTuD"
+      >
+        delectus aut autem
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoCard LongTitle should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi hjhHBO"
+    >
+      <div
+        class="sc-ewnqHT bDrKue"
+      >
+        #
+        1
+      </div>
+      <div
+        class="sc-fFGjHI bmMTuD"
+      >
+        long title long titl...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoCard NotCompleted should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi hjhHBO"
+    >
+      <div
+        class="sc-ewnqHT bDrKue"
+      >
+        #
+        1
+      </div>
+      <div
+        class="sc-fFGjHI bmMTuD"
+      >
+        delectus aut autem
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoCard ShortTitle should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi hjhHBO"
+    >
+      <div
+        class="sc-ewnqHT bDrKue"
+      >
+        #
+        1
+      </div>
+      <div
+        class="sc-fFGjHI bmMTuD"
+      >
+        short title
+      </div>
+    </div>
+  </div>
+</div>
+`;

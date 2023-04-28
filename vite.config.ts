@@ -12,7 +12,7 @@ export default defineConfig({
       port: 443,
     },
     watch: {
-      ignored: ["coverage"],
+      ignored: ["./coverage/**"],
     },
   },
 });

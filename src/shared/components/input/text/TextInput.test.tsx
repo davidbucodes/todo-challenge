@@ -11,8 +11,9 @@ const getTextInput = () => screen.getByRole("textbox");
 describe("TextInput", () => {
   describe("Default", () => {
     it("should render correctly", () => {
-      render(<Default />);
+      const { container } = render(<Default />);
       const textInput = getTextInput();
+      expect(container).toMatchSnapshot();
       expect(textInput).not.toBeNull();
     });
 
@@ -33,9 +34,10 @@ describe("TextInput", () => {
 
   describe("WithLabel", () => {
     it("should render correctly", () => {
-      render(<WithLabel />);
+      const { container } = render(<WithLabel />);
       const textInput = getTextInput();
       const textInputLabel = screen.getByText(WithLabel.args.label!);
+      expect(container).toMatchSnapshot();
       expect(textInput).not.toBeNull();
       expect(textInputLabel).not.toBeNull();
     });
@@ -43,7 +45,8 @@ describe("TextInput", () => {
 
   describe("WithPlaceholder", () => {
     it("should render correctly", () => {
-      render(<WithPlaceholder />);
+      const { container } = render(<WithPlaceholder />);
+      expect(container).toMatchSnapshot();
       const textInput = getTextInput();
       expect(textInput).not.toBeNull();
     });
@@ -51,7 +54,8 @@ describe("TextInput", () => {
 
   describe("WithInitialValue", () => {
     it("should render correctly", () => {
-      render(<WithInitialValue />);
+      const { container } = render(<WithInitialValue />);
+      expect(container).toMatchSnapshot();
       const textInput = getTextInput();
       expect(textInput).not.toBeNull();
     });
