@@ -1,8 +1,9 @@
 import { ErrorBoundary } from "react-error-boundary";
 import { Outlet, createBrowserRouter } from "react-router-dom";
-import App from "../app";
 import ErrorPage from "./error";
+import IndexPage from "./index";
 import PageNotFound from "./notFound";
+import TodoByIdPage from "./todos/[id]";
 
 export const ErrorBoundaryLayout = () => (
   <ErrorBoundary FallbackComponent={ErrorPage}>
@@ -16,7 +17,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <IndexPage />,
+      },
+      {
+        path: "/todos/:todoId",
+        element: <TodoByIdPage />,
       },
       {
         path: "*",

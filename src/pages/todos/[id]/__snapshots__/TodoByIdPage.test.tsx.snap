@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoByIdPage Default should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    TodoByIdPage
+    <div
+      class="sc-bgqQcB"
+    >
+      12345
+    </div>
+  </div>
+</div>
+`;
