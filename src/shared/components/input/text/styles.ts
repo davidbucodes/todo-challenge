@@ -5,5 +5,7 @@ export namespace Styles {
   export const TextInput = styled.input.attrs({
     type: "text",
   })``;
-  export const InputLabel = styled.label``;
+  export const InputLabel = styled.label`
+    padding-right: 1ch;
+  `;
 }
