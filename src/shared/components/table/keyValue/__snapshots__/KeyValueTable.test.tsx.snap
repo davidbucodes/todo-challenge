@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyValueTable Default should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi"
+    >
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          item number
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          1
+        </span>
+      </div>
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          title
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          delectus aut autem
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`KeyValueTable Error should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi"
+    >
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          item number
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          Error loading data
+        </span>
+      </div>
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          title
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          Error loading data
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`KeyValueTable Loading should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi"
+    >
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          item number
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          Loading data...
+        </span>
+      </div>
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          title
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          Loading data...
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`KeyValueTable NoDataProvided should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB"
+  >
+    <div
+      class="sc-gTRrQi"
+    >
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          item number
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          No data provided
+        </span>
+      </div>
+      <div
+        class="sc-ewnqHT cJqMKh"
+      >
+        <span
+          class="sc-fFGjHI bkirf"
+        >
+          title
+          :
+        </span>
+        <span
+          class="sc-dicizt jiIufD"
+        >
+          No data provided
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

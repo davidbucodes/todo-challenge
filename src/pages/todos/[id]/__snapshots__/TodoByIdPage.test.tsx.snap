@@ -3,60 +3,75 @@
 exports[`TodoByIdPage Default should render correctly 1`] = `
 <div>
   <div
-    class="sc-bgqQcB"
+    class="sc-iVCKna"
   >
     <div
-      class="sc-gTRrQi dlvFVq"
+      class="sc-bgqQcB"
     >
       <div
-        class="sc-dicizt gsIoIL"
+        class="sc-gTRrQi"
       >
-        <span
-          class="sc-iVCKna dRTxeT"
+        <div
+          class="sc-ewnqHT cJqMKh"
         >
-          item number:
-        </span>
-        <span
-          class="sc-gxYJeL eWXHxr"
-        >
-          12345
-        </span>
+          <span
+            class="sc-fFGjHI bkirf"
+          >
+            item number
+            :
+          </span>
+          <span
+            class="sc-dicizt jiIufD"
+          >
+            12345
+          </span>
+        </div>
       </div>
     </div>
     <div
-      class="sc-gTRrQi dlvFVq"
+      class="sc-bgqQcB"
     >
       <div
-        class="sc-dicizt gsIoIL"
+        class="sc-gTRrQi"
       >
-        <span
-          class="sc-iVCKna dRTxeT"
+        <div
+          class="sc-ewnqHT cJqMKh"
         >
-          creator
-          :
-        </span>
-        <span
-          class="sc-gxYJeL eWXHxr"
-        />
+          <span
+            class="sc-fFGjHI bkirf"
+          >
+            creator
+            :
+          </span>
+          <span
+            class="sc-dicizt jiIufD"
+          >
+            No data provided
+          </span>
+        </div>
       </div>
     </div>
     <div
-      class="sc-gTRrQi dlvFVq"
+      class="sc-bgqQcB"
     >
       <div
-        class="sc-dicizt gsIoIL"
+        class="sc-gTRrQi"
       >
-        <span
-          class="sc-iVCKna dRTxeT"
+        <div
+          class="sc-ewnqHT cJqMKh"
         >
-          title
-          :
-        </span>
-        <span
-          class="sc-gxYJeL eWXHxr"
-        >
-          Loading...
-        </span>
+          <span
+            class="sc-fFGjHI bkirf"
+          >
+            title
+            :
+          </span>
+          <span
+            class="sc-dicizt jiIufD"
+          >
+            Loading data...
+          </span>
+        </div>
       </div>
     </div>
   </div>

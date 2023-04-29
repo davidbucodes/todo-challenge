@@ -1,39 +1,9 @@
 import { useParams } from "react-router-dom";
+import KeyValueTable from "../../../shared/components/table/keyValue";
 import { useGetTodoByIdQuery } from "../../../store/apis/todos/api";
 import { useGetUserByIdQuery } from "../../../store/apis/users/api";
 import { Styles } from "./styles";
 import { Props, UrlParams } from "./types";
-
-function AsyncTodoDetail<T>({
-  detail,
-  data,
-  dataKey,
-  isLoading,
-  isError,
-}: {
-  detail: string;
-  data: T;
-  dataKey: keyof NonNullable<T>;
-  isLoading: boolean;
-  isError: boolean;
-}) {
-  return (
-    <Styles.TodoDetail>
-      <Styles.TodoDetailKeyValue>
-        <Styles.Key>{detail}:</Styles.Key>
-        <Styles.Value>
-          {data
-            ? String(data[dataKey])
-            : isLoading
-            ? "Loading..."
-            : isError
-            ? "Error loading"
-            : ""}
-        </Styles.Value>
-      </Styles.TodoDetailKeyValue>
-    </Styles.TodoDetail>
-  );
-}
 
 export default function TodoByIdPage({}: Props) {
   const { todoId } = useParams<UrlParams>();
@@ -53,22 +23,33 @@ export default function TodoByIdPage({}: Props) {
 
   return (
     <Styles.Wrapper>
-      <Styles.TodoDetail>
-        <Styles.TodoDetailKeyValue>
-          <Styles.Key>item number:</Styles.Key>
-          <Styles.Value>{todoId}</Styles.Value>
-        </Styles.TodoDetailKeyValue>
-      </Styles.TodoDetail>
-      <AsyncTodoDetail
-        detail="creator"
-        dataKey={"name"}
+      <KeyValueTable
+        columns={[
+          {
+            name: "item number",
+            dataKey: "todoId",
+          },
+        ]}
+        data={{ todoId }}
+      />
+      <KeyValueTable
+        columns={[
+          {
+            name: "creator",
+            dataKey: "name",
+          },
+        ]}
         data={user}
         isLoading={isLoadingUser}
         isError={isErrorUser}
       />
-      <AsyncTodoDetail
-        detail="title"
-        dataKey={"title"}
+      <KeyValueTable
+        columns={[
+          {
+            name: "title",
+            dataKey: "title",
+          },
+        ]}
         data={todo}
         isLoading={isLoadingTodo}
         isError={isErrorTodo}
