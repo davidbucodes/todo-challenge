@@ -1,7 +1,6 @@
 import { Styles } from "./styles";
-import { Props } from "./types";
 
-export default function NotFoundPage({}: Props) {
+export default function NotFoundPage() {
   return (
     <Styles.Wrapper>
       <Styles.Title>Page not found!</Styles.Title>

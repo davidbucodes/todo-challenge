@@ -5,9 +5,8 @@ import Grid from "../../shared/components/layout/grid";
 import TodoCard from "../../shared/components/todo/card";
 import { useGetAllTodosQuery } from "../../store/apis/todos/api";
 import { Styles } from "./styles";
-import { Props } from "./types";
 
-export default function IndexPage({}: Props) {
+export default function IndexPage() {
   const [filterTodosTerm, setFilterTodosTerm] = useState<string>("");
 
   const { todos, isLoading, isError } = useGetAllTodosQuery(undefined, {

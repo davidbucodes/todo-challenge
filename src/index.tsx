@@ -21,7 +21,7 @@ root.render(
         </ThemeProvider>
       </Provider>
     </HelmetProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 if (import.meta.hot) {

@@ -1,5 +1,6 @@
 import { composeStories } from "@storybook/react";
 import { render, screen } from "@testing-library/react";
+import { Todo } from "src/store/apis/todos/types";
 import { theme } from "../../../../styles/theme";
 import * as stories from "./TodoCard.stories";
 
@@ -10,8 +11,9 @@ describe("TodoCard", () => {
   describe("Default", () => {
     it("should render correctly", () => {
       const { container } = render(<Default />);
-      const idElement = screen.getByText(`#${Default.args.todo!.id!}`);
-      const titleElement = screen.getByText(Default.args.todo!.title!);
+      const todo = Default.args.todo as Todo;
+      const idElement = screen.getByText(`#${todo.id}`);
+      const titleElement = screen.getByText(todo.title);
       expect(container).toMatchSnapshot();
       expect(idElement).toBeInTheDocument();
       expect(titleElement).toBeInTheDocument();
@@ -21,8 +23,9 @@ describe("TodoCard", () => {
   describe("ShortTitle", () => {
     it("should render correctly", () => {
       const { container } = render(<ShortTitle />);
-      const idElement = screen.getByText(`#${ShortTitle.args.todo!.id!}`);
-      const titleElement = screen.getByText(ShortTitle.args.todo!.title!);
+      const todo = ShortTitle.args.todo as Todo;
+      const idElement = screen.getByText(`#${todo.id}`);
+      const titleElement = screen.getByText(todo.title);
       expect(container).toMatchSnapshot();
       expect(idElement).toBeInTheDocument();
       expect(titleElement).toBeInTheDocument();
@@ -32,11 +35,9 @@ describe("TodoCard", () => {
   describe("LongTitle", () => {
     it("should render correctly", () => {
       const { container } = render(<LongTitle />);
-      const idElement = screen.getByText(`#${LongTitle.args.todo!.id!}`);
-      const formattedTitle = `${LongTitle.args.todo!.title!.substring(
-        0,
-        20
-      )}...`;
+      const todo = LongTitle.args.todo as Todo;
+      const idElement = screen.getByText(`#${todo.id}`);
+      const formattedTitle = `${todo.title.substring(0, 20)}...`;
       const titleElement = screen.getByText(formattedTitle);
       expect(container).toMatchSnapshot();
       expect(idElement).toBeInTheDocument();

@@ -36,7 +36,8 @@ describe("TextInput", () => {
     it("should render correctly", () => {
       const { container } = render(<WithLabel />);
       const textInput = getTextInput();
-      const textInputLabel = screen.getByText(WithLabel.args.label!);
+      const label = WithLabel.args.label as string;
+      const textInputLabel = screen.getByText(label);
       expect(container).toMatchSnapshot();
       expect(textInput).not.toBeNull();
       expect(textInputLabel).not.toBeNull();

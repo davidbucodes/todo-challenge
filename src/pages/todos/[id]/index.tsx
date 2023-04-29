@@ -3,9 +3,9 @@ import KeyValueTable from "../../../shared/components/table/keyValue";
 import { useGetTodoByIdQuery } from "../../../store/apis/todos/api";
 import { useGetUserByIdQuery } from "../../../store/apis/users/api";
 import { Styles } from "./styles";
-import { Props, UrlParams } from "./types";
+import { UrlParams } from "./types";
 
-export default function TodoByIdPage({}: Props) {
+export default function TodoByIdPage() {
   const { todoId } = useParams<UrlParams>();
 
   const {

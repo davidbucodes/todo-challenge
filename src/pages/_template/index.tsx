@@ -1,6 +1,5 @@
 import { Styles } from "./styles";
-import { Props } from "./types";
 
-export default function TemplatePage({}: Props) {
+export default function TemplatePage() {
   return <Styles.Wrapper>TemplatePage</Styles.Wrapper>;
 }
