@@ -26,7 +26,7 @@ const config: Config = {
   rootDir: ".",
   setupFilesAfterEnv: ["<rootDir>/test/setupTests.ts"],
   maxWorkers: 1,
-  coveragePathIgnorePatterns: ["/node_modules/", ".storybook"],
+  coveragePathIgnorePatterns: ["/node_modules/", ".storybook", "test/setup"],
 };
 
 export default config;

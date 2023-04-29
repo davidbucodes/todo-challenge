@@ -1,21 +1,9 @@
 import { Preview } from "@storybook/react";
-import { setupWorker } from "msw";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import { store } from "../src/store/store";
 import { theme } from "../src/styles/theme";
-import { handlers } from "../test/mocks/apis/handlers";
-
-if (typeof global.process === "undefined") {
-  const worker = setupWorker(...handlers);
-  worker.start({
-    onUnhandledRequest: (request, print) => {
-      if (request.url.hostname !== "localhost") {
-        print.error();
-      }
-    },
-  });
-}
+import "../test/setup/browser";
 
 const preview: Preview = {
   parameters: {
