@@ -4,6 +4,7 @@ exports[`TodoCard Completed should render correctly 1`] = `
 <div>
   <div
     class="sc-bgqQcB"
+    title="delectus aut autem"
   >
     <div
       class="sc-gTRrQi izpPZC"
@@ -28,6 +29,7 @@ exports[`TodoCard Default should render correctly 1`] = `
 <div>
   <div
     class="sc-bgqQcB"
+    title="delectus aut autem"
   >
     <div
       class="sc-gTRrQi hjhHBO"
@@ -52,6 +54,7 @@ exports[`TodoCard LongTitle should render correctly 1`] = `
 <div>
   <div
     class="sc-bgqQcB"
+    title="long title long title long title"
   >
     <div
       class="sc-gTRrQi hjhHBO"
@@ -76,6 +79,7 @@ exports[`TodoCard NotCompleted should render correctly 1`] = `
 <div>
   <div
     class="sc-bgqQcB"
+    title="delectus aut autem"
   >
     <div
       class="sc-gTRrQi hjhHBO"
@@ -100,6 +104,7 @@ exports[`TodoCard ShortTitle should render correctly 1`] = `
 <div>
   <div
     class="sc-bgqQcB"
+    title="short title"
   >
     <div
       class="sc-gTRrQi hjhHBO"

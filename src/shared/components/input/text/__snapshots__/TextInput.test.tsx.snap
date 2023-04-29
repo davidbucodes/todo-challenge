@@ -36,7 +36,7 @@ exports[`TextInput WithLabel should render correctly 1`] = `
     class="sc-bgqQcB"
   >
     <label
-      class="sc-ewnqHT"
+      class="sc-ewnqHT exFVTf"
       for="id"
     >
       Label
