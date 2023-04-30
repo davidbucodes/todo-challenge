@@ -6,3 +6,4 @@ web_modules
 build
 coverage
 .vscode
+storybook-static
