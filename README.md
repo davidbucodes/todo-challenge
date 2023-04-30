@@ -3,8 +3,12 @@
 ## Introduction
 
 This project implements a todo display system.
+
 All of the todos are displayed, and each todo could be displayed with relevant details at a dedicated page.
+
 The todos data source is the `jsonplaceholder.typicode.com` website.
+
+This project is deployed via GitHub pages, and available at this address: `https://davidbucodes.github.io/todo-challenge/`.
 
 ## Code Frameworks
 
@@ -44,3 +48,9 @@ The todos data source is the `jsonplaceholder.typicode.com` website.
 - Launching the Cypress app: `npm run cypress:open`
 - Modifying the code with the Prettier framework: `npm run prettier`
 - Modifying the code with the Eslint framework: `npm run lint:fix`
+
+## CI/CD
+
+This project is deployed via GitHub pages using GitHub actions.
+
+The deployment workflow tests the code, creates the website bundle and artifact and deploys the artifact to GitHub pages.

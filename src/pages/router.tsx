@@ -11,22 +11,27 @@ export const ErrorBoundaryLayout = () => (
   </ErrorBoundary>
 );
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      element: <ErrorBoundaryLayout />,
+      children: [
+        {
+          path: "/",
+          element: <IndexPage />,
+        },
+        {
+          path: "/todos/:todoId",
+          element: <TodoByIdPage />,
+        },
+        {
+          path: "*",
+          element: <PageNotFound />,
+        },
+      ],
+    },
+  ],
   {
-    element: <ErrorBoundaryLayout />,
-    children: [
-      {
-        path: "/",
-        element: <IndexPage />,
-      },
-      {
-        path: "/todos/:todoId",
-        element: <TodoByIdPage />,
-      },
-      {
-        path: "*",
-        element: <PageNotFound />,
-      },
-    ],
+    basename: location.pathname,
   },
-]);
+);
