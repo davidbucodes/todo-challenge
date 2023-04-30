@@ -14,7 +14,7 @@ describe("TextInput", () => {
       const { container } = render(<Default />);
       const textInput = getTextInput();
       expect(container).toMatchSnapshot();
-      expect(textInput).not.toBeNull();
+      expect(textInput).toBeInTheDocument();
     });
 
     describe("onInputValueChanged", () => {
@@ -39,8 +39,8 @@ describe("TextInput", () => {
       const label = WithLabel.args.label as string;
       const textInputLabel = screen.getByText(label);
       expect(container).toMatchSnapshot();
-      expect(textInput).not.toBeNull();
-      expect(textInputLabel).not.toBeNull();
+      expect(textInput).toBeInTheDocument();
+      expect(textInputLabel).toBeInTheDocument();
     });
   });
 
@@ -48,8 +48,9 @@ describe("TextInput", () => {
     it("should render correctly", () => {
       const { container } = render(<WithPlaceholder />);
       expect(container).toMatchSnapshot();
-      const textInput = getTextInput();
-      expect(textInput).not.toBeNull();
+      const placeholderText = WithPlaceholder.args.placeholder as string;
+      const textInput = screen.getByPlaceholderText(placeholderText);
+      expect(textInput).toBeInTheDocument();
     });
   });
 
@@ -57,8 +58,9 @@ describe("TextInput", () => {
     it("should render correctly", () => {
       const { container } = render(<WithInitialValue />);
       expect(container).toMatchSnapshot();
-      const textInput = getTextInput();
-      expect(textInput).not.toBeNull();
+      const initialValue = WithInitialValue.args.initialValue as string;
+      const textInput = screen.getByDisplayValue(initialValue);
+      expect(textInput).toBeInTheDocument();
     });
   });
 });
