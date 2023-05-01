@@ -15,22 +15,22 @@ describe("TodoByIdPage", () => {
       expect(wrapperElement).toBeInTheDocument();
     });
 
+    it("should render id", async () => {
+      render(<Default />);
+      const idElement = await screen.findByText(getTodoByIdExample.id);
+      expect(idElement).toBeInTheDocument();
+    });
+
     it("should render title", async () => {
       render(<Default />);
-      const wrapperElement = await screen.findByText(getTodoByIdExample.title);
-      expect(wrapperElement).toBeInTheDocument();
+      const titleElement = await screen.findByText(getTodoByIdExample.title);
+      expect(titleElement).toBeInTheDocument();
     });
 
     it("should render creator", async () => {
       render(<Default />);
-      const wrapperElement = await screen.findByText(getUserByIdExample.name);
-      expect(wrapperElement).toBeInTheDocument();
-    });
-
-    it("should render error loading creator", async () => {
-      render(<Default />);
-      const wrapperElement = await screen.findByText(getUserByIdExample.name);
-      expect(wrapperElement).toBeInTheDocument();
+      const creatorElement = await screen.findByText(getUserByIdExample.name);
+      expect(creatorElement).toBeInTheDocument();
     });
   });
 });

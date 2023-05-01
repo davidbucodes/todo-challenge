@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import TodoByIdPage from ".";
+import { getTodoByIdExample } from "../../../../test/mocks/apis/todos/examples";
 
 const meta = {
   title: "Page/TodoByIdPage",
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof TodoByIdPage>;
 export const Default: Story = {
   decorators: [
     (Story) => (
-      <MemoryRouter initialEntries={["/todos/12345"]}>
+      <MemoryRouter initialEntries={[`/todos/${getTodoByIdExample.id}`]}>
         <Routes>
           <Route path="/todos/:todoId" element={<Story />} />
         </Routes>
